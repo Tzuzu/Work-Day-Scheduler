@@ -11,6 +11,7 @@ $(document).ready(function () {
     $('#currentDay').text('Today is ' + currentDay);
     $('#currentHour').text(currentTime.format('HH:mm:ss a'));
   } 
+  getTime()
   setInterval(getTime, 1000);
 
   // This will adjust the colors of each row depending on whether it's the current time, if it's passed, or if it hasn't happened yet
